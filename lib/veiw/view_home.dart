@@ -39,8 +39,8 @@ class _ViewHomeState extends State<ViewHome> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(onPressed: (){
-                  Get.offNamed('/about');
-                  // Get.toNamed('/about');
+                  // Get.offNamed('/about');
+                  Get.toNamed('/about');
                 }, child: Text("about us")),
                 ElevatedButton(onPressed: (){
                   Get.toNamed('/contact');
