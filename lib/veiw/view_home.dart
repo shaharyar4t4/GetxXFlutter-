@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:leangetx/components/bottom_sheet.dart';
 import 'package:leangetx/components/snake_bar.dart';
 
@@ -32,6 +33,20 @@ class _ViewHomeState extends State<ViewHome> {
             ElevatedButton(onPressed: (){
               bottomSheet();
             }, child: Text("Show the Bottom Sheet")),
+
+            Row(
+              spacing: 15,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                ElevatedButton(onPressed: (){
+                  Get.offNamed('/about');
+                  // Get.toNamed('/about');
+                }, child: Text("about us")),
+                ElevatedButton(onPressed: (){
+                  Get.toNamed('/contact');
+                }, child: Text("contact us")),
+              ],
+            )
           ],
         ),
       ),
