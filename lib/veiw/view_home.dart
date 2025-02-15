@@ -28,7 +28,7 @@ class _ViewHomeState extends State<ViewHome> {
               snakeBar();
             }, child: Text("Show the Snakebar")),
             ElevatedButton(onPressed: (){
-              dailogyBox();
+              dailogyBox("Enter your name", TextEditingController());
             }, child: Text("Show the Dailogy Box")),
             ElevatedButton(onPressed: (){
               bottomSheet();
