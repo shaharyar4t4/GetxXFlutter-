@@ -33,6 +33,9 @@ class _ViewHomeState extends State<ViewHome> {
             ElevatedButton(onPressed: (){
               bottomSheet();
             }, child: Text("Show the Bottom Sheet")),
+            ElevatedButton(onPressed: (){
+              Get.toNamed('/counter');
+            }, child: Text("Counter View")),
 
             Row(
               spacing: 15,

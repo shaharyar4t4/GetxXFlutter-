@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
        // below is the code for the page route
        getPages: allPage,
 
-      home: VeiwLanguagechanger(),
+      home: ViewHome(),
     );
   }
 }
